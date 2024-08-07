@@ -1,0 +1,89 @@
+/* MÁQUINA DE CAFÉ:
+    1º Pedir o número do produto
+    2º Valor do produto
+    3º Inserir o cartão
+    4º Senha do cartão
+    5º Entregar o produto
+*/
+
+// Produtos disponíveis
+produtos = ['Café', 'Capuccino', 'Café com Leite', 'Chocolate']
+// Senha do cartão do usuário
+senhaCorreta = 1234;
+
+function menuprincipal(){
+    
+// Pedir o número do produto
+opcao = prompt('Menu: 1. café (R$2,40) |  2. Capuccinno (R$3,50) | 3. Café com leite (R$ 3,00) | 4. Chocolate (R$4,00) |  5. Sair | Digite p número do pedido: ');
+    
+
+// Chammando a função 'menuprncipal'
+menuprincipal();
+
+if (opcao == '1') {
+    //opção 1. Café
+    alert('Você escolheu: ' + produtos[0]);
+    alert(produtos[0] + ' R$ 2,00');
+    // Insira o cartão
+    alert('Insira o cartão');
+    // Conferindo a senha
+    senha = prompt("Digite sua senha: ")
+    if (senha == senhaCorreta){
+        alert('Senha confirmada. Espere a entrega do produto.');
+    } else {
+        alert('Senha incorreta, por favor tente novamente');
+        menuprincipal();
+    }
+} else if(opcao == '2'){
+    //opção 2. Capuccino
+    alert('Você escolheu: ' + produtos[1]);
+    alert(produtos[1] + ' R$ 3,50');
+    // Insira o cartão
+    alert('Insira o cartão');
+    // Conferindo a senha
+    senha = prompt("Digite sua senha: ")
+    if (senha == senhaCorreta){
+        alert('Senha confirmada. Espere a entrega do produto.');
+    } else {
+        alert('Senha incorreta, por favor tente novamente');
+        menuprincipal();
+    }
+} else if(opcao == '3'){
+    //opção 3. Café com Leite
+    alert('Você escolheu: ' + produtos[2]);
+    alert(produtos[2] + ' R$ 3,00');
+    // Insira o cartão
+    alert('Insira o cartão');
+    // Conferindo a senha
+    senha = prompt("Digite sua senha: ")
+    if (senha == senhaCorreta){
+        alert('Senha confirmada. Espere a entrega do produto.');
+    } else {
+        alert('Senha incorreta, por favor tente novamente');
+        menuprincipal();
+    }
+} else if(opcao == '4'){
+    //opção 4. Chocolate
+    alert('Você escolheu: ' + produtos[3]);
+    alert(produtos[3] + ' R$ 4,00');
+    // Insira o cartão
+    alert('Insira o cartão');
+    // Conferindo a senha
+    senha = prompt("Digite sua senha: ")
+    if (senha == senhaCorreta){
+        alert('Senha confirmada. Espere a entrega do produto.');
+    } else {
+        alert('Senha incorreta, por favor tente novamente');
+        menuprincipal();
+    }
+} else if(opcao == 5){
+alert("Obrigado pela preferencia");
+exit();
+
+} 
+ else {
+    alert('Você digitou uma opção inválida. Por favor, tente novamente.');
+    menuprincipal();
+ }
+}
+menuprincipal();
