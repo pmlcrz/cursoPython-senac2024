@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: rgb(221, 135, 221);
+        }
+    </style>
+</head>
+<body>
+    <script>/*
+49. Construa uma página onde o usuário digitará o nome e a média de cinco alunos e o
+programa só aceitará a média do aluno caso ela esteja entre zero e dez.
+
+*/
+
+let alunos = [];
+
+for (let i = 0; i < 3; i++) {
+    let nome = prompt("Digite o nome do aluno " + (i + 1) + ":");
+    let media;
+    while (true) {
+        media = parseFloat(prompt("Digite a média do aluno " + (i + 1) + " (0 a 10):"));
+        if (media >= 0 && media <= 10) {
+            alunos.push({nome: nome, media: media});
+            break;
+        } else {
+            alert("Média inválida! Por favor, insira uma média entre 0 e 10.");
+        }
+    }
+}
+
+let resultado = "Alunos e suas médias:\n";
+alunos.forEach(aluno => {
+    let status = aluno.media >= 6 ? "Aprovado" : "Reprovado";
+    resultado += "Nome: " + aluno.nome + ", Média: " + aluno.media + ", Status: " + status + "\n";
+});
+alert(resultado);
+
+
+
+</script>
+</html>
+</body>

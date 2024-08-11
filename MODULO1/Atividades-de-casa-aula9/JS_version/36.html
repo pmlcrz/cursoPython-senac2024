@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: rgb(221, 135, 221);
+        }
+    </style>
+</head>
+<body>
+    <script>
+    /*
+Crie um jogo de par ou ímpar onde o computador irá gerar um número aleatório e o
+usuário irá digitar um número. Após digitar o número, o programa irá utilizar um vetor
+para resolver o jogo. Se a soma dos números for par, o usuário vence. Se for ímpar, o
+computador vence.
+*/
+
+
+const computador = Math.floor(Math.random() * 11);
+
+const usuario = parseInt(prompt("Digite um número:"));
+
+const numeros = [computador, usuario];
+
+const soma = numeros[0] + numeros[1];
+
+if (soma % 2 === 0) {
+    alert("Você escolheu " + usuario + " e o computador escolheu " + computador + ".");
+    alert("A soma é par. Você venceu!");
+} else {
+    alert("Você escolheu " + usuario + " e o computador escolheu " + computador + ".");
+    alert("A soma é ímpar. Computador venceu!");
+}
+
+</script>
+</body>
+</html>

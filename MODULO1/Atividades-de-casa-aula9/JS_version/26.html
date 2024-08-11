@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: rgb(221, 135, 221);
+        }
+    </style>
+</head>
+<body>
+    <script>
+/*
+Construa uma página/programa onde o usuário digitará um número, a página fará
+uma contagem regressiva até zero e, depois, contará de zero até o número que o
+usuário digitou.
+*/
+
+const numero = parseInt(prompt("Digite um número:"));
+
+let regressiva = "";
+for (let i = numero; i >= 0; i--) {
+    regressiva += i + " ";
+}
+alert("Contagem regressiva: " + regressiva);
+
+let progressiva = "";
+for (let i = 0; i <= numero; i++) {
+    progressiva += i + " ";
+}
+alert("Contagem progressiva: " + progressiva);
+
+
+</script>
+</body>
+</html>

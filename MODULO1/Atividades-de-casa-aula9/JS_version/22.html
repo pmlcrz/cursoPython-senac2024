@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: rgb(221, 135, 221);
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+/* Construa uma página/programa onde o usuário digitará um número e o programa
+completará o número digitado até cem, apenas com números pares.
+*/
+
+const numero = parseInt(prompt("Digite um número:"));
+
+let resultado = "";
+for (let i = numero + 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+        resultado += i + " ";
+    }
+}
+alert("Números pares até 100: " + resultado);
+
+</script>
+</body>
+</html>

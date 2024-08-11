@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: rgb(221, 135, 221);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        
+/*
+48. Construa uma página/programa onde o usuário digitará o nome e o bairro de dez
+pessoas. O programa exibirá o nome e bairro das pessoas em ordem alfabética.
+*/
+
+
+let pessoas = [];
+
+
+for (let i = 0; i < 3; i++) {
+    let nome = prompt("Digite o nome da pessoa " + (i + 1) + ":");
+    let bairro = prompt("Digite o bairro da pessoa " + (i + 1) + ":");
+    pessoas.push({nome: nome, bairro: bairro});
+}
+
+pessoas.sort((a, b) => a.nome.localeCompare(b.nome));
+
+let resultado = "Lista de pessoas em ordem alfabética:\n";
+pessoas.forEach(pessoa => {
+    resultado += "Nome: " + pessoa.nome + ", Bairro: " + pessoa.bairro + "\n";
+});
+alert(resultado);
+
+
+</script>
+</html>
+</body>

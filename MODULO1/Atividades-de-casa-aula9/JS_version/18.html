@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: rgb(221, 135, 221);
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /* 18. Construa um jogo de pedra, papel e tesoura.
+*/
+
+const opcoes = ["pedra", "papel", "tesoura"];
+
+const usuario = prompt("Escolha pedra, papel ou tesoura:").toLowerCase();
+
+const computador = opcoes[Math.floor(Math.random() * opcoes.length)];
+
+alert("Você escolheu: " + usuario);
+alert("O computador escolheu: " + computador);
+
+if (usuario === computador) {
+    alert("Empate!");
+} else if (
+    (usuario === "pedra" && computador === "tesoura") ||
+    (usuario === "papel" && computador === "pedra") ||
+    (usuario === "tesoura" && computador === "papel")
+) {
+    alert("Você venceu!");
+} else {
+    alert("Computador venceu!");
+}
+
+    </script>
+</body>
+</html>

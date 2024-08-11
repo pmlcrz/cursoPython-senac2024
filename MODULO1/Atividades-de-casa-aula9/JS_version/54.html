@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: rgb(221, 135, 221);
+        }
+    </style>
+</head>
+<body>
+    <script>
+    /*
+54. Construa uma página/programa cadastrando cinco funcionários de uma escola, sendo
+que dois deles são professores. Todos os funcionários terão cadastrados seus nomes e
+salários e, os professores, terão cadastrados a disciplina às quais lecionam.
+*/
+
+
+let funcionarios = [];
+
+
+for (let i = 0; i < 2; i++) {
+    let nome = prompt("Digite o nome do funcionário " + (i + 1) + ":");
+    let salario = parseFloat(prompt("Digite o salário do funcionário " + (i + 1) + ":"));
+    
+    if (i < 2) {  
+        let disciplina = prompt("Digite a disciplina que o professor " + (i + 1) + " leciona:");
+        funcionarios.push({nome: nome, salario: salario, disciplina: disciplina});
+    } else {
+        funcionarios.push({nome: nome, salario: salario, disciplina: null});
+    }
+}
+
+let resultado = "Funcionários cadastrados:\n";
+funcionarios.forEach(funcionario => {
+    if (funcionario.disciplina !== null) {
+        resultado += "Professor: " + funcionario.nome + ", Salário: R$" + funcionario.salario.toFixed(2) + ", Disciplina: " + funcionario.disciplina + "\n";
+    } else {
+        resultado += "Funcionário: " + funcionario.nome + ", Salário: R$" + funcionario.salario.toFixed(2) + "\n";
+    }
+});
+alert(resultado);
+
+
+</script>
+</html>
+</body>

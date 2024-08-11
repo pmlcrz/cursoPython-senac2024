@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: rgb(221, 135, 221);
+        }
+    </style>
+</head>
+<body>
+    <script>
+    /*
+37. Construa um programa/página onde o usuário irá digitar seu nome e cidade de onde
+está digitando. Essas informações passarão para uma função e, caso a cidade seja
+“Rio de Janeiro”, a resposta, além do nome da pessoa, escreverá “Seja Bem-vindo
+à Cidade Maravilhosa”. Caso contrário, exibirá apenas o nome e a cidade digitada
+(utilizar passagem de parâmetros).
+*/
+function saudacao(nome, cidade) {
+    if (cidade.toLowerCase() === "Rio de janeiro") {
+        alert(nome + ", Seja Bem-vindo à cidade maravilhosa!");
+    } else {
+        alert(nome + ", de " + cidade);
+    }
+}
+
+const nome = prompt("Digite seu nome:");
+const cidade = prompt("Digite sua cidade:");
+
+saudacao(nome, cidade);
+
+</script>
+</body>
+</html>
