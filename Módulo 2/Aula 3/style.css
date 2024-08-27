@@ -1,0 +1,77 @@
+/* 
+PREFERÊNCIA DE LEITURA DO CSS
+
+1º) CSS INLINE
+2º) CSS INTERNO
+3º) CSS EXTERNO
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #465FEB;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+/* Menu */
+nav {
+    background-color: #576ADA;
+    color: #F5F5F5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+    /* Alterando característica dos itens da lista */
+nav ul li {
+    list-style: none;
+    display: inline-block; /* coloca na mesma linha */
+    font-size: 20px;
+    padding: 0px 15px 0px 15px;
+    border-right: 1px solid #f5f5f5;
+    text-align: center;
+}
+/* a pseudoclasse ":hover" altera as características do objeto quando passar o mouse em cima */
+nav ul li:hover, nav ul li a:hover{
+    background-color: #f5f5f5;
+    color: #576ADA;
+}
+
+    /* Alterando característica do link */
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+}
+
+/* Parte Principal */
+
+/* Rodapé */
+footer{
+   font-size: 26px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: yellow;
+   text-align: center;
+}
+
+footer span{
+    font-style: italic;
+}
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+/* 
+PREFERÊNCIA DE LEITURA DO CSS
+
+1º) CSS INLINE
+2º) CSS INTERNO
+3º) CSS EXTERNO
+
+*/
+
+nav {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2.cabecalho {
+    color: purple;
+}
+
+footer{
+   font-size: 26px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: yellow;
+   text-align: center;
+}
+
+footer span{
+    font-style: italic;
+}
