@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho do blog -->
+    <header class="bg-primary text-white text-center py-4">
+        <div class="container">
+            <h1>Meu Blog Pessoal</h1>
+            <h2>Bem-vindos ao blog oficial do Prof. Marcio</h2>
+        </div>
+    </header>
+
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.rj.senac.br/" target="_blank">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#frente-fria">Frente fria no RJ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sinusite">Sinusite ataca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fale Conosco</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Parte principal -->
+            <main class="col-lg-8">
+                <header class="mb-4">
+                    <h2>Postagens mais recentes</h2>
+                    <h3>Edição: agosto/2024</h3>
+                </header>
+                <!-- Seção de postagens -->
+                <section>
+                    <!-- Artigo 1 -->
+                    <article class="mb-4" id="frente-fria">
+                        <figure class="mb-3">
+                            <img src="..." class="img-thumbnail" alt="Praia da Urca com céu nublado. Na areia está sentada uma moça contemplando a natureza.">
+                            <figcaption>Imagem 1. Frente fria</figcaption>
+                        </figure>
+
+                        <h2>Frente fria chegando no Rio de Janeiro.</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi cum architecto voluptates nemo
+                            voluptas iusto, reiciendis exercitationem repudiandae animi distinctio enim quo placeat
+                            voluptatem eum doloribus, dolorem modi totam incidunt.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sapiente officia quo
+                            voluptatem, libero excepturi modi dolorum, earum reprehenderit nostrum omnis! Cum aliquam quae esse quos, quam dolores? Pariatur, qui?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quia voluptatibus repellendus
+                            debitis itaque vero voluptatem praesentium id. Adipisci nemo magni debitis quas non optio error quis illo similique rerum.</p>
+                    </article>
+                    <!-- Artigo 2 -->
+                    <article class="mb-4" id="sinusite">
+                        <figure class="mb-3">
+                            <img src="..." class="img-thumbnail" alt="Mulher com cara de dor, assoando o nariz.">
+                            <figcaption>Imagem 2. Sinusite ataca</figcaption>
+                        </figure>
+
+                        <h2>Sinusite atinge mulheres no Rio de Janeiro.</h2>
+                        <p>Lorem ipsum <span>Marcio Moraes</span> dolor sit amet consectetur adipisicing elit. At libero
+                            soluta minus quo fugit animi nam molestias dolores culpa ratione fugiat inventore quia dolorem, non nisi nulla iusto voluptas laborum?</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt illum nobis dolores sed
+                            reiciendis minima rem? Est tempore minima officia ad eveniet maiores nobis vel deleniti id. Quod, modi.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui delectus minima, soluta aliquam
+                            numquam laudantium minus, consequatur tempora rem ducimus quibusdam non explicabo quod error expedita aliquid deleniti labore at!</p>
+                    </article>
+                </section>
+            </main>
+
+            <!-- Parte secundária do site -->
+            <aside class="col-lg-4">
+                <h2>Outras seções</h2>
+                <nav class="mb-4">
+                    <h3>Links úteis</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="https://globo.com" target="_blank">Globo</a></li>
+                        <li><a href="https://rj.senac.br" target="_blank">Senac RJ</a></li>
+                        <li><a href="https://r7.com.br" target="_blank">Portal R7</a></li>
+                    </ul>
+                </nav>
+                <div class="autor mb-4">
+                    <img src="imagem-artigo.png" class="img-fluid mb-2" alt="Imagem do autor do blog. Marcio tem cabelos castanhos, branco, olhos castanhos, 1,72m.">
+                    <figcaption class="text-center"> Imagem</figcaption>
+                    <h4>Marcio Fuchshuber Moraes</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam odio architecto placeat
+                        minus! Culpa beatae blanditiis odio mollitia, soluta dolor, dolores excepturi corrupti quidem
+                        dolorem, reiciendis aut minus exercitationem?</p>
+                </div>
+                <div class="formulario">
+                    <form action="form.html" method="get">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Digite o seu nome.">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite o seu email." required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem:</label>
+                            <textarea class="form-control" id="mensagem" rows="4" placeholder="Digite seu texto..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <div class="container">
+            <p>Meu Blog foi desenvolvido por <span>Pamela</span>. &copy;2024</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

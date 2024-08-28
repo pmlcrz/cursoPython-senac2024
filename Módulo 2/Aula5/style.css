@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #465FEB;
+    color: #f5f5f5;
+    text-align: center;
+}
+
+/* Menu Principal */
+nav.menu-principal {
+    background-color: #576ADA;
+    color: #F5F5F5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+    /* Alterando característica dos itens da lista */
+nav.menu-principal ul li {
+    list-style: none;
+    display: inline-block; /* coloca na mesma linha */
+    font-size: 20px;
+    padding: 0px 15px 0px 15px;
+    border-right: 1px solid #f5f5f5;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+/* a pseudoclasse ":hover" altera as características do objeto quando passar o mouse em cima */
+nav.menu-principal ul li:hover, nav.menu-principal ul li a:hover{
+    background-color: #f5f5f5;
+    color: #576ADA;
+}
+
+    /* Alterando característica do link */
+nav.menu-principal ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+/* Menu Secundário */
+nav.menu-secundario ul li {
+    list-style: none;
+    font-size: 20px;
+}
+
+nav.menu-secundario ul li a{
+    text-decoration: none;
+    color: red;
+}
+
+/* Container */
+.container{
+    display: flex;
+}
+
+/* Parte Principal */
+main{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 70%;
+    padding-right:20px;
+}
+
+main section{
+    margin-top: 15px;
+}
+
+main section article{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+main section article span{
+    font-size: 20px;
+    font-style: italic;
+}
+
+figure {
+    margin-bottom: 10px;
+}
+/* Parte secundária */
+aside{
+    width: 30%;
+}
+
+/* Rodapé */
+footer{
+    max-width: 1200px;
+    width: 100%;
+    font-size: 26px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: yellow;
+    text-align: center;
+}
+
+footer span{
+    font-style: italic;
+}
+
+
+
+
+
+
