@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Cadastro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>Gerenciamento</h2>
+
+    <div class="mb-3">
+      <a href="/consultarfuncionario" class="btn btn-secondary">Listar Funcionários</a>
+      <a href="/consultarcliente" class="btn btn-secondary">Listar clientes</a>
+      <a href="/cadastrarfuncionario" class="btn btn-primary">Cadastrar funcionário</a>
+      <a href="/alterarfuncionario" class="btn btn-warning">Atualizar funcionário</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <form action="/cadastrar-funcionario" method="POST">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite o nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="cpf">CPF:</label>
+        <input type="text" class="form-control" id="cpf" placeholder="Digite o CPF" name="cpf" required>
+      </div>
+      <div class="form-group">
+        <label for="endereco">Endereço:</label>
+        <input type="text" class="form-control" id="endereco" placeholder="Digite o endereço" name="endereco" required>
+      </div>
+      <div class="form-group">
+        <label for="datanasc">Data de Nascimento:</label>
+        <input type="date" class="form-control" id="datanasc" name="datanasc" required>
+      </div>
+      <div class="form-group form-check">
+        <label class="form-check-label">
+          <input class="form-check-input" type="checkbox" name="remember"> Lembrar-me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Cadastrar Funcionário</button>
+    </form>
+  </div>
+</body>
+</html>
